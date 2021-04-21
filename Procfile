@@ -1,1 +1,1 @@
-web: gunicorn --bind 55.55.55.5:8000 monticello.wsgi --log-file -
+web: gunicorn monticello.wsgi
