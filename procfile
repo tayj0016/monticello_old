@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: python manage.py runserver 55.55.55.5:8000 --noreload
