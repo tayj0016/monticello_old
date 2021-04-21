@@ -1,2 +1,0 @@
-web: python manage.py runserver 55.55.55.5:800
-web: gunicorn locallibrary.wsgi --log-file -
