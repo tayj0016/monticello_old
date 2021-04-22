@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for item in recipe_list %}
+            <div class="col-sm-4 align-items-stretch">
+                <div class="card-deck">
+                    <div class="card mt-4 test">
+                      <h2 class="card-title">{{ item.title }}</h2>
+                      <p>Added: {{ item.add_date }}</p>
+                      <a href="{% url 'recipes:detail' item.id %}" target="_blank" class="btn btn-primary mt-auto">Edit recipe details</a>
+                        <br>
+                      <a href="{{ item.url }}" target="_blank" class="btn btn-primary mt-auto">Go to the recipe!</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        <div class="col-sm-4 align-items-stretch">
+            <div class="card-deck">
+                <div class="card mt-4 test">
+                    <h2 class="card-title"><a href="{% url 'recipes:recipe_new' %}">Add</a></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

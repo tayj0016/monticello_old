@@ -1,0 +1,77 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron jumbotron-fluid homeBanner"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-9">
+            <h2 class="text-center">Nutritious Inspiration</h2>
+            <div class="row row-cols-1 row-cols-md-2 m-0 p-0">
+                <div class="col mb-4">
+                    <div class="card">
+                        <a href="https://www.unf.edu">
+                            <img class="card-img-top"
+                                src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Breakfast</h5>
+                            <p class="card-text">Breakfast foods aren't just for the morning!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://images.pexels.com/photos/3609894/pexels-photo-3609894.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lunch</h5>
+                            <p class="card-text">This will be a great recipe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img class="card-img-top"
+                             src="https://images.pexels.com/photos/1256875/pexels-photo-1256875.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinner</h5>
+                            <p class="card-text">This will be a great recipe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/2122278/pexels-photo-2122278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Snacks</h5>
+                            <p class="card-text">Everyone loves snacks!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <h2 class="text-center">Random Ideas</h2>
+            <div class="card border-0 recipeCard" style="background-color: transparent;">
+{#                <img class="card-img-top" src="{{ recipe1.thumb }}" alt="Card image cap">#}
+                <img src="https://images.pexels.com/photos/2122278/pexels-photo-2122278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+                <div class="card-body">
+{#                    <h5 class="card-title"><a href="{{ recipe1.url }}">{{ recipe1.title }}</a></h5>#}
+{#                    <p class="card-text">{{ recipe1.desc }}</p>#}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

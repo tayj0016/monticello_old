@@ -32,6 +32,8 @@ ALLOWED_HOSTS = ['55.55.55.5']
 # Application definition
 
 INSTALLED_APPS = [
+    'layout.apps.LayoutConfig',
+    'recipes.apps.RecipesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
